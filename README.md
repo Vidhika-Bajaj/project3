@@ -3,7 +3,7 @@ This Train schedule contract program tells about the scheduling of trains and if
 
 ## Description
 
-This program is a straightforward contract for railway schedules, it provides information on train scheduling and, in the event of an accident, the results are determined accordingly. It contains four functions that are: First Train, which calls TrainArrival(public variable) using the need approach and uses an assert statement to determine the finalCall value. If a train arrives, the finalCall value will be increased by 3, else it will remain unchanged and print another message, Second TrainCancelled, uses the TrainArrival variable to reverse the train schedule, Third getCal, for returning finalCall value, Fourth Accident, using the revert technique, the result of the Ambulance variable is returned depending on whether it is required or not.
+This program is a straightforward contract for railway schedules, it provides information on train scheduling and, in the event of an accident, the results are determined accordingly. It contains four functions that are: First Train, which calls TrainArrival(public variable) using the need approach and uses an assert statement to determine the finalCall value. If a train arrives, the finalCall value will be increased by 3, else it will remain unchanged and print another message; Second TrainCancelled, uses the TrainArrival variable to reverse the train schedule, Third getCal, for returning finalCall value, Fourth Accident, using the revert technique, the result of the Ambulance variable is returned depending on whether it is required or not.
 
 ## Getting Started
 ### Executing program
