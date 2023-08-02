@@ -3,7 +3,7 @@ This Train schedule contract program tells about the scheduling of trains and if
 
 ## Description
 
-This program is a simple contract for cricket matches, providing the details of match scheduling and injuries during the match, getting the results accordingly. It contains four functions that are: First Match, that is responsible for the finalCall value using assert statement means if there will be a match then the finalCall value will get incremented by 3 and if not then it will remain the same and print one message too along with the calling of Matchtoday(public variable) using require technique, Second CancelledMatch, is responsible for reverting the match schedule using Matchtoday variable, Third getCal, for returning finalCall value, Fourth InjuryHappened for returning the result of the Medical variable if it is needed or not using revert technique.
+This program is a simple contract for train schedules, providing the details of train scheduling and accidents if happens any, getting the results accordingly. It contains four functions that are: First Train, which is responsible for the finalCall value using assert statement means if there will be a train then the finalCall value will get incremented by 3 and if not then it will remain the same and print one message too along with the calling of TrainArrival(public variable) using require technique, Second TrainCancelled, is responsible for reverting the train schedule using TrainArrival variable, Third getCal, for returning finalCall value, Fourth Accident for returning the result of the Ambulance variable if it is needed or not, using revert technique.
 
 ## Getting Started
 ### Executing program
@@ -38,11 +38,11 @@ contract TrainScheduling {
     }
 }
 ```
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile evax1.sol" button.
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile trainVID.sol" button.
 
-Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "Cricketmatch" contract from the dropdown menu, and then click on the "Deploy" button. 
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "TrainScheduling" contract from the dropdown menu, and then click on the "Deploy" button. 
 
-Once the contract is deployed, you can interact with it by clicking on various functions. Click on the "Cricketmatch" contract in the left-hand sidebar, and then click on the functions, getting the results accordingly. Finally, click on the functions again to revert back the results and print related messages.
+Once the contract is deployed, you can interact with it by clicking on various functions. Click on the "TrainScheduling" contract in the left-hand sidebar, and then click on the functions, getting the results accordingly. Finally, to reverse the outcomes and print-related messages, click on the functions once more.
 
 ## Authors
 Vidhika Bajaj
