@@ -9,31 +9,31 @@ This program is a simple contract for cricket matches, providing the details of 
 ### Executing program
        
 ```javascript
- // SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
-contract Cricketmatch {
-    bool public Matchtoday = true;
-    bool public Medical = false;
+contract TrainScheduling {
+    bool public TrainArrival = true;
+    bool public Ambulance = false;
     uint finalCall = 0;
 
-    function Match () public {
-        require(Matchtoday,"Today is no match!!!");
+    function Train () public {
+        require(TrainArrival,"No Train!!!");
         finalCall += 3;
     
         assert (finalCall != 0);
     }
-    function CancelledMatch() public{
-        Matchtoday = !Matchtoday;
+    function TrainCancelled() public{
+        TrainArrival = !TrainArrival;
     }
     function getCal() public view returns(uint) {
         return finalCall;
     }
-    function InjuryHappened () public {
-        if(Matchtoday){
-            Medical = true;
+    function Accident () public {
+        if(TrainArrival){
+            Ambulance = true;
         }else{
-            revert("No medical needed");
+            revert("Accident doesn't happened!!!");
         }
     }
 }
