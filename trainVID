@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+contract TrainScheduling {
+    bool public TrainArrival = true;
+    bool public Ambulance = false;
+    uint finalCall = 0;
+
+    function Train () public {
+        require(TrainArrival,"No Train!!!");
+        finalCall += 3;
+    
+        assert (finalCall != 0);
+    }
+    function TrainCancelled() public{
+        TrainArrival = !TrainArrival;
+    }
+    function getCal() public view returns(uint) {
+        return finalCall;
+    }
+    function Accident () public {
+        if(TrainArrival){
+            Ambulance = true;
+        }else{
+            revert("Accident doesn't happened!!!");
+        }
+    }
+}
